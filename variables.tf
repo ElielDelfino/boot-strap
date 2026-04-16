@@ -14,6 +14,10 @@ variable "github_repo" {
   description = "Nome do repositório do GitHub"
 }
 
+variable "s3_bucket_name" {
+  description = "Nome do bucket S3 para armazenar o estado do Terraform"
+}
+
 variable "extra_permissions" {
   description = "Permissões adicionais personalizadas em JSON"
   type        = string
